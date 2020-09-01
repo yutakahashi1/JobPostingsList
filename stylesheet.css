@@ -1,0 +1,11 @@
+.header__upper {
+  display: flex;
+}
+
+.header__upper__type {
+  display: flex;
+}
+
+.header__lower {
+  display: flex;
+}
