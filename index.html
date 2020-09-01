@@ -3,13 +3,17 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <title>JobPostingsList</title>
   </head>
   <body>
-    <cdiv class="header">
+    <div class="header">
       <div class="header__upper">
         <div class="header__upper__title">
-          Small World
+          SMALL WORLD
         </div>
         <div class="header__upper__type">
           <div class="header__upper__type__left">
@@ -38,12 +42,64 @@
         </div>
       </div>
     </div>
-    <div class="main">メイン
+    <div class="main">
       <div class="main-left">
-
+        <form method="get" action="#" class="main-left__search-container">
+          <input type="text" size="25" placeholder="　Search">
+          <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+        </form>
+        <div class="main-left__text">
+          + Create job posting
+        </div>
       </div>
       <div class="main-right">
-
+        <div class="main-right__type">
+          <div class="main-right__type__left">
+            Published
+          </div>
+          <div class="main-right__type__middle">
+            Saved
+          </div>
+          <div class="main-right__type__right">
+            Unpublished
+          </div>
+        </div>
+        <div class="main-right__box">
+          <table class="main-right__box__table">
+            <tr class="main-right__box__table__thead">
+              <th>Number</th>
+              <th>Job posting</th>
+              <th>Page views</th>
+              <th>Candidate</th>
+              <th>Status</th>
+              <th>Edit</th>
+            </tr>
+            <tr>
+              <td>内容（コンテンツ）</td>
+              <td>内容（コンテンツ）</td>
+              <td>内容（コンテンツ）</td>
+              <td>内容（コンテンツ）</td>
+            </tr>
+            <tr>
+              <td>内容（コンテンツ）</td>
+              <td>内容（コンテンツ）</td>
+              <td>内容（コンテンツ）</td>
+              <td>内容（コンテンツ）</td>
+            </tr>
+            <tr>
+              <td>内容（コンテンツ）</td>
+              <td>内容（コンテンツ）</td>
+              <td>内容（コンテンツ）</td>
+              <td>内容（コンテンツ）</td>
+            </tr>
+            <tr class="last">
+              <td>内容（コンテンツ）</td>
+              <td>内容（コンテンツ）</td>
+              <td>内容（コンテンツ）</td>
+              <td>内容（コンテンツ）</td>
+            </tr>
+          </table>
+        </div>
       </div>
     </div>
   </body>
