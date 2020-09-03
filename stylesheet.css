@@ -77,7 +77,7 @@
 }
 
 .main-left {
-  margin-right: 20px;
+  /* margin-right: 20px; */
   
   
 }
@@ -102,7 +102,7 @@
 }
 .search_container input[type="submit"]{
   cursor: pointer;
-  font-family: Font Awesome;
+  font-family: “Font Awesome 5″;
   border: none;
   background: rgb(223, 223, 223);
   color: #fff;
