@@ -18,11 +18,11 @@
 
 .header__upper__title {
   font-size: 30px;
+  padding-right: 100px;
 }
 
 .header__upper__type {
   display: flex;
-  padding-left: 3%;
   margin-top: 10px;
 }
 
@@ -32,7 +32,8 @@
 }
 
 .header__upper__type__left {
-  padding-left: 15%;
+  border-bottom: 3px solid white;
+  padding-bottom: 3px;
 }
 
 .header__upper__type__middle {
@@ -55,6 +56,11 @@
   padding-left: 5%;
 }
 
+.header__lower__left {
+  border-bottom: 3px solid white;
+  padding-bottom: 3px;
+}
+
 .header__lower__middle {
   padding-left: 3%;
 }
@@ -67,17 +73,55 @@
   display: flex;
   padding-top: 3%;
   padding-left: 5%;
+  background-color: rgb(245, 243, 243);
 }
 
-.main-left__search-container {
-  padding-bottom: 3%;
+.main-left {
+  margin-right: 20px;
+  
+  
 }
+
+.search_container{
+  box-sizing: border-box;
+  position: relative;
+  border: 1px solid #999;
+  display: block;
+  padding: 3px 10px;
+  border-radius: 5px;
+  height: 2.3em;
+  width: 265px;
+  overflow: hidden;
+}
+.search_container input[type="text"]{
+  border: none;
+  height: 2.0em;
+}
+.search_container input[type="text"]:focus {
+  outline: 0;
+}
+.search_container input[type="submit"]{
+  cursor: pointer;
+  font-family: Font Awesome;
+  border: none;
+  background: rgb(223, 223, 223);
+  color: #fff;
+  position: absolute;
+  width: 3.5em;
+  height: 3.0em;
+  right:0px;
+  top: -3px;
+  outline : none;
+}
+
+
 
 .main-left__text {
-  background-color: #59aef3;
+  background: linear-gradient(to right, #59aef3, #bddef8);
   color: white;
   text-align: center;
   border-radius: 5px;
+  margin-top: 10px;
 }
 
 .main-left__text__text {
@@ -127,7 +171,8 @@
 }
 
 .main-right__box__table {
-  margin: 10px;
+  margin: 15px;
+  background-color: white;
 }
 
 .main-right__box__table__thead {
@@ -153,6 +198,7 @@ table td {
   border-right: 1px solid #adacac;
   padding: 20px;
   line-height: 15px;
+  vertical-align: middle;
 }
 
 .td-secondrow {
@@ -199,10 +245,20 @@ table td {
   font-size: 10px;
 }
 
-.p12 a:first-of-type, .p12 a:last-of-type, .p12 .is-active{
+.page {
+  color: white;
+}
+
+.p12 a:first-of-type {
+  color: #999;
+  border: none;
+} 
+
+.p12 .is-active{
   background-color: #59aef3;
   color: #fff;
   font-weight: bold;
+  
 }
 
 .pagination{
@@ -213,12 +269,15 @@ table td {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  border: 1px solid #999;
+  border-radius: 5px;
 }
 
 .pagination a{
   display: inline-block;
   padding: 10px 18px;
-  color: #222;
+  color: #59aef3;
+  border-right: 1px solid #999;
 }
 
 .page {
